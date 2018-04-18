@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE nmaprun PUBLIC "-//IDN nmap.org//DTD Nmap XML 1.04//EN" "https://svn.nmap.org/nmap/docs/nmap.dtd">
+<?xml-stylesheet href="file:///C:/Users/moyiyoudao/Downloads/nmap-6.46-win32/nmap-6.46/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 6.46 scan initiated Tue Mar 13 09:12:18 2018 as: nmap -&#45;unprivileged -&#45;script Mitsubishi_melsoft_tcp_p_5007.nse -p 5007 -oX out.xml 31.179.205.120 -->
+<nmaprun scanner="nmap" args="nmap -&#45;unprivileged -&#45;script Mitsubishi_melsoft_tcp_p_5007.nse -p 5007 -oX out.xml 31.179.205.120" start="1520903538" startstr="Tue Mar 13 09:12:18 2018" version="6.46" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="5007"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1520903539" endtime="1520903547"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="31.179.205.120" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="5007"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="Mitsubishi/Melsoft TCP" product="Mitsubishi Q PLC" method="probed" conf="10"/><script id="Mitsubishi_melsoft_tcp_p_5007" output="&#xa;  CPUINFO: Q03UDECPU       "><elem key="CPUINFO">Q03UDECPU       </elem>
+</script></port>
+</ports>
+<times srtt="391531" rttvar="223937" to="1287279"/>
+</host>
+<runstats><finished time="1520903547" timestr="Tue Mar 13 09:12:27 2018" elapsed="9.08" summary="Nmap done at Tue Mar 13 09:12:27 2018; 1 IP address (1 host up) scanned in 9.08 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

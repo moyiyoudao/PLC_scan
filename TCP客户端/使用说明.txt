@@ -1,0 +1,9 @@
+运行环境：
+1、windows系统
+2、python 编译环境
+使用说明：
+1、将server.py 在服务器端运行后，在终端输入python client.py 终端ip   即可连接终端。
+2、输入python plc_scan.py ip 命令服务器端扫描开始
+3、输入Read Results 输出扫描结果
+
+注意：终端显示时间戳加命令语句表示一条命令完成，之后才能再输入下一条命令给服务器端

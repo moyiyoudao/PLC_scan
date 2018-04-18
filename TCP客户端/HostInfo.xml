@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<!DOCTYPE nmaprun PUBLIC "-//IDN nmap.org//DTD Nmap XML 1.04//EN" "https://svn.nmap.org/nmap/docs/nmap.dtd">
+<?xml-stylesheet href="file:///C:/Users/moyiyoudao/Downloads/nmap-6.46-win32/nmap-6.46/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 6.46 scan initiated Wed Mar 28 08:33:14 2018 as: nmap -O -sS -sU -F -oX ItInfo.xml 192.168.158.66-70 -->
+<nmaprun scanner="nmap" args="nmap -O -sS -sU -F -oX ItInfo.xml 192.168.158.66-70" start="1522197194" startstr="Wed Mar 28 08:33:14 2018" version="6.46" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="100" services="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+<scaninfo type="udp" protocol="udp" numservices="100" services="7,9,17,19,49,53,67-69,80,88,111,120,123,135-139,158,161-162,177,427,443,445,497,500,514-515,518,520,593,623,626,631,996-999,1022-1023,1025-1030,1433-1434,1645-1646,1701,1718-1719,1812-1813,1900,2000,2048-2049,2222-2223,3283,3456,3703,4444,4500,5000,5060,5353,5632,9200,10000,17185,20031,30718,31337,32768-32769,32771,32815,33281,49152-49154,49156,49181-49182,49185-49186,49188,49190-49194,49200-49201,65024"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1522197194" endtime="1522197333"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.158.66" addrtype="ipv4"/>
+<address addr="D8:CB:8A:05:5B:CB" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="192">
+<extrareasons reason="port-unreaches" count="98"/>
+<extrareasons reason="resets" count="94"/>
+</extraports>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1025"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="NFS-or-IIS" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1026"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="LSA-or-nterm" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1027"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="IIS" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1028"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="500"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="isakmp" method="table" conf="3"/></port>
+<port protocol="udp" portid="4500"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="nat-t-ike" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="135"/>
+<portused state="closed" proto="tcp" portid="7"/>
+<portused state="closed" proto="udp" portid="7"/>
+<osmatch name="Microsoft Windows 7 SP0 - SP1, Windows Server 2008 SP1, or Windows 8" accuracy="100" line="54657">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="100"><cpe>cpe:/o:microsoft:windows_7::-</cpe><cpe>cpe:/o:microsoft:windows_7::sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="100"><cpe>cpe:/o:microsoft:windows_server_2008::sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8" accuracy="100"><cpe>cpe:/o:microsoft:windows_8</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="1096300" lastboot="Thu Mar 15 16:03:55 2018"/>
+<distance value="1"/>
+<tcpsequence index="264" difficulty="Good luck!" values="E620FB9F,3ADF02C7,8C7AB1E8,A6225A4E,A4D792DB,276FF45C"/>
+<ipidsequence class="Incremental" values="3A1B,3A1D,3A1E,3A1F,3A20,3A21"/>
+<tcptssequence class="100HZ" values="688D128,688D132,688D13C,688D146,688D150,688D15A"/>
+<times srtt="58" rttvar="115" to="100000"/>
+</host>
+<host starttime="1522197194" endtime="1522197335"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.158.68" addrtype="ipv4"/>
+<address addr="00:01:E6:4D:3C:9B" addrtype="mac" vendor="Hewlett-Packard Company"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="no-responses" count="100"/>
+</extraports>
+<extraports state="open|filtered" count="100">
+<extrareasons reason="no-responses" count="100"/>
+</extraports>
+</ports>
+<os></os>
+<distance value="1"/>
+<times srtt="496" rttvar="2165" to="100000"/>
+</host>
+<host starttime="1522197194" endtime="1522197333"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.158.69" addrtype="ipv4"/>
+<address addr="6C:AE:8B:77:E7:04" addrtype="mac" vendor="IBM"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="187">
+<extrareasons reason="resets" count="94"/>
+<extrareasons reason="port-unreaches" count="93"/>
+</extraports>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1026"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="LSA-or-nterm" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1027"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="IIS" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="mysql" method="table" conf="3"/></port>
+<port protocol="udp" portid="137"><state state="open" reason="udp-response" reason_ttl="128"/><service name="netbios-ns" method="table" conf="3"/></port>
+<port protocol="udp" portid="138"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="netbios-dgm" method="table" conf="3"/></port>
+<port protocol="udp" portid="500"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="isakmp" method="table" conf="3"/></port>
+<port protocol="udp" portid="623"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="asf-rmcp" method="table" conf="3"/></port>
+<port protocol="udp" portid="1900"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="upnp" method="table" conf="3"/></port>
+<port protocol="udp" portid="4500"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="nat-t-ike" method="table" conf="3"/></port>
+<port protocol="udp" portid="5353"><state state="open" reason="udp-response" reason_ttl="255"/><service name="zeroconf" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="135"/>
+<portused state="closed" proto="tcp" portid="7"/>
+<portused state="closed" proto="udp" portid="7"/>
+<osmatch name="Microsoft Windows 7 SP0 - SP1, Windows Server 2008 SP1, or Windows 8" accuracy="100" line="54657">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="100"><cpe>cpe:/o:microsoft:windows_7::-</cpe><cpe>cpe:/o:microsoft:windows_7::sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="100"><cpe>cpe:/o:microsoft:windows_server_2008::sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8" accuracy="100"><cpe>cpe:/o:microsoft:windows_8</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="146946" lastboot="Mon Mar 26 15:46:29 2018"/>
+<distance value="1"/>
+<tcpsequence index="262" difficulty="Good luck!" values="AAC58748,8EAB9756,3B693B1A,4AD0CF48,CB47A1AF,934E46D0"/>
+<ipidsequence class="Incremental" values="2BED,2BEE,2BEF,2BF0,2BF1,2BF2"/>
+<tcptssequence class="100HZ" values="E037B7,E037C1,E037CB,E037D5,E037DF,E037E9"/>
+<times srtt="338" rttvar="480" to="100000"/>
+</host>
+<runstats><finished time="1522197335" timestr="Wed Mar 28 08:35:35 2018" elapsed="140.99" summary="Nmap done at Wed Mar 28 08:35:35 2018; 5 IP addresses (3 hosts up) scanned in 140.99 seconds" exit="success"/><hosts up="3" down="2" total="5"/>
+</runstats>
+</nmaprun>
